@@ -44,6 +44,7 @@ if __name__ == '__main__':
     example_subject_variable = subset_data_df.columns.tolist()[0]
     example_measurement_variable = subset_data_df.columns.tolist()[3]
     example_repetition_variable = subset_data_df.columns.tolist()[4]
+    EXAMPLE_UNITS = "bpm"
 
     # --- obtain repeatability ---
     sem_value, mdc_value = get_sem(subset_data_df,
@@ -52,4 +53,4 @@ if __name__ == '__main__':
                            example_repetition_variable)
 
     # show results
-    print(f"SEM: {sem_value:.3f} bpm\nMDC: {mdc_value:.3f} bpm")
+    print(f"SEM: {sem_value:.3f} {EXAMPLE_UNITS}\nMDC: {mdc_value:.3f} {EXAMPLE_UNITS}")

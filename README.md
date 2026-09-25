@@ -22,7 +22,7 @@ pip install -r requirements.txt
 Usage:
 
 ```bash
-python sem_repeatability.py
+python repeatability_sem.py
 ```
 
 Cite As
